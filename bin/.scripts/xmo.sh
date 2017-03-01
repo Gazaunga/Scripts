@@ -17,8 +17,8 @@ sudo pip install rainbowstream glances ImageScraper
 cd ~/
 sudo chmod +x zetup.sh
 ./zetup.sh
-sudo chmod +x font.sh
-./font.sh
+#sudo chmod +x font.sh
+#./font.sh
 xdg-user-dirs-update
 cd .config
 mkdir qutebrowser

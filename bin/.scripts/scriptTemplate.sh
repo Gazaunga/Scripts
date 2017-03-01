@@ -103,7 +103,7 @@ tmpDir="/tmp/${scriptName}.$RANDOM.$RANDOM.$RANDOM.$$"
 # Save to Desktop use: $HOME/Desktop/${scriptBasename}.log
 # Save to standard user log location use: $HOME/Library/Logs/${scriptBasename}.log
 # -----------------------------------
-logFile="$HOME/Library/Logs/${scriptBasename}.log"
+logFile="/dev/null"
 
 # Check for Dependencies
 # -----------------------------------

@@ -1,4 +1,6 @@
 #!/bin/bash
+cd ~/
+wget https://raw.githubusercontent.com/Gazaunga/Scripts/master/bin/.scripts/zetup.sh
 sudo pacman -Syu --noconfirm -- needed
 cd ~/
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
@@ -11,3 +13,6 @@ cd ~/
 mv .xmonad .xmonad.orig
 git clone https://github.com/vicfryzel/xmonad-config.git .xmonad
 sudo pip install rainbowstream glances ImageScraper
+cd ~/
+sudo chmod +x zetup.sh
+./zetup.sh

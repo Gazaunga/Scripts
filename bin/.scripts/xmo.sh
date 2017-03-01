@@ -6,7 +6,7 @@ sudo pacman -Syu --noconfirm -- needed
 cd ~/
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 touch ~/.xmobarrc
-pacaur -S --noconfirm --noedit python-pip emacs xmonad libghc-xmonad-contrib-dev xmobar stalonetray \
+pacaur -S --noconfirm --noedit python-pip emacs xmonad libghc-xmonad-contrib-dev typora qutebrowser xmobar stalonetray \
     suckless-tools scrot cabal-install xcompmgr
 sudo cabal update
 sudo cabal install --global yeganesh

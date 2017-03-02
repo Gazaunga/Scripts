@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ~/
-wget https://raw.githubusercontent.com/Gazaunga/Scripts/master/bin/.scripts/zetup.sh
+#wget https://raw.githubusercontent.com/Gazaunga/Scripts/master/bin/.scripts/zetup.sh
 #wget https://raw.githubusercontent.com/Gazaunga/Scripts/master/bin/.scripts/font.sh
 sudo pacman -Syu --noconfirm -- needed
 cd ~/
@@ -15,8 +15,8 @@ mv .xmonad .xmonad.orig
 git clone https://github.com/vicfryzel/xmonad-config.git .xmonad
 sudo pip install rainbowstream glances ImageScraper
 cd ~/
-sudo chmod +x zetup.sh
-./zetup.sh
+#sudo chmod +x zetup.sh
+#./zetup.sh
 #sudo chmod +x font.sh
 #./font.sh
 xdg-user-dirs-update

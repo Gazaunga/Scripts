@@ -7,7 +7,7 @@ bak=~/.bak
 dotfiles=".bashrc .bash_aliases .bash_functions .Xresources .Xdefaults utils.sh"
 folders="emacs"
 
-read -r -p "Symlink ".bashrc .bash_aliases .bash_functions .Xresources .Xdefaults utils.sh? [y/N] " response
+read -r -p "Symlink ".bashrc .editorconfig .fehbg .interrobang .lesskey .profile .screenrc .xbindkeysrc .xinitrc .bash_aliases .bash_functions .Xresources .Xdefaults utils.sh? [y/N] " response
 response=${response,,}
 if [[ $response =~ ^(yes|y)$ ]]; then
 echo "Storing dotfiles at $bak ..."
@@ -38,5 +38,11 @@ if [[ $response =~ ^(yes|y)$ ]]; then
   fi
   ln -sf $dir/nvim ~/.config/nvim
 fi
+
+mv .config ~/.config
+mv .ssh ~/.ssh
+mv bin ~/bin
+mv rofi ~/rofi
+mv terminator ~/terminator
 
 echo "Done successfully!"

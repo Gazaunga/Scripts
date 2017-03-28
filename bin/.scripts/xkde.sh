@@ -28,4 +28,8 @@ git clone https://github.com/Gazaunga/Startpages.git
 wget https://raw.githubusercontent.com/Gazaunga/Fed/master/.Xmodmap -O .Xmodmap
 cd ~/
 mkdir gsimplecal
+cd gsimplecal
 wget https://raw.githubusercontent.com/Gazaunga/Archi3/master/gsimplecal/config -O config
+cd ~/
+echo "export PATH=\$PATH:~/.cabal/bin:~/.xmonad/bin" >> ~/.bashrc
+source ~/.bashrc

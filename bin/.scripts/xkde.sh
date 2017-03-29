@@ -2,9 +2,10 @@
 cd ~/
 mkdir .config
 sudo pacman -Syu --noconfirm -- needed
+sudo pacman -S pacaur
 pacaur -S --noconfirm --noedit xmonad xmonad-contrib xmobar stalonetray dmenu print-manager cups kdenetwork-filesharing scrot \
-    cabal-install kde-applications ttf-dejavu ttf-liberation pandoc xcompmgr kde-gtk-config systemd-kcm sublime-text \
-    alsa-lib alsa-utils mpd moc ttf-iosevka fira-code-git tamzen-font-git typora texlive-full glances howdoi rxvt-unicode
+    cabal-install kde-applications ttf-dejavu ttf-liberation pandoc texstudio xcompmgr kde-gtk-config systemd-kcm sublime-text \
+    alsa-lib alsa-utils mpd moc ttf-iosevka fira-code-git tamzen-font-git typora texlive-most glances howdoi rxvt-unicode
 sudo cabal update
 cabal install --global yeganesh
 cd ~/

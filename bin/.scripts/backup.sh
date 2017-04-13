@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# alias backup="sh ~/bin/.scripts/backup.sh"
+# alias backup="sudo sh ~/bin/.scripts/backup.sh"
 
 # What to backup. 
 backup_files="/home /var/spool/mail /etc /root /boot /opt"
